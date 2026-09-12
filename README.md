@@ -45,6 +45,10 @@ pnpm dist:win
 
 The installer and portable artifacts are written to `dist/`. The packaged application includes its runtime and does not require users to install Node.js or manually start the server. The app stores its local database in the configured Wave data directory.
 
+##Screenshot
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7eeb82ee-8a73-453e-8e7e-e1d962b923c9" />
+
+
 ## Security notes
 
 Passwords are bcrypt-hashed. Sessions use random HTTP-only cookies with hashed server-side tokens. Station discovery only returns public stations, station membership and admin actions are checked server-side, SQL uses prepared statements, chat history is bounded, and user content is rendered as text rather than HTML.
